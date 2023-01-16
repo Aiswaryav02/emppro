@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- dtl string interpolation -->
+    <h1>hello</h1>
+    <p>{{data}}</p>
+    <!-- dtl for loop -->
+    <h3>fruits</h3>
+    {% for i in d1%}
+    <p>{{i}}</p>
+    {% endfor i%}
+    <h2>table</h2>
+    <table>
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>class</th>
+        </tr>
+        {%for i in table%}
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.age}}</td>
+            <td>{{i.class}}</td>
+        </tr>
+    {%endfor%}
+    </table>
+    <h3>if else</h3>
+    {%if condition%}
+    <div>condition true</div>
+    {%else%}
+    <div>condition false</div>
+    {%endif%}
+</body>
+</html>

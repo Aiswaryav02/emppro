@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="">
+        {% csrf_token %}
+        <input type="text" name="fn" placeholder="first name"><br>
+        <input  type="text" name="lan" placeholder="last name"><br>
+        <input type="text" name="un" placeholder="username"><br>
+        <input type="password"  name="ps"placeholder="password"><br>
+        <input type="password" name="cp"placeholder="confim password"><br>
+        <input type="submit" value="register">
+    </form>
+</body>
+</html>
